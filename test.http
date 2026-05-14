@@ -1,0 +1,36 @@
+### Get all students
+GET http://localhost:3000/students
+
+### Filter by course
+GET http://localhost:3000/students?course=CSE
+
+### Filter by year
+GET http://localhost:3000/students?year=2
+
+### Get single student
+GET http://localhost:3000/students/1
+
+### Create student
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "name": "Kavya",
+  "course": "CSE",
+  "year": 2,
+  "grade": "A+"
+}
+
+### Update student
+PUT http://localhost:3000/students/1
+Content-Type: application/json
+
+{
+  "grade": "A+"
+}
+
+### Delete student
+DELETE http://localhost:3000/students/5
+
+### Get stats
+GET http://localhost:3000/stats
